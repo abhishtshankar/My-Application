@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name" />
+
+    <EditText
+        android:id="@+id/sellingPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selling Price"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/taxRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tax Rate"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/productTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Type" />
+
+    <Spinner
+        android:id="@+id/productTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/productTypeLabel"
+        android:spinnerMode="dropdown"
+        android:entries="@array/product_types" />
+
+
+    <!-- Add any other necessary UI elements such as an image picker -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

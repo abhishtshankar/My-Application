@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Android Assignment</string>
+
+        <string-array name="product_types">
+            <item>Product</item>
+            <item>Services</item>
+        </string-array>
+
+</resources>
